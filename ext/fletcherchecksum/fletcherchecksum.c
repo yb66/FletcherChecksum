@@ -33,10 +33,10 @@ static VALUE method_check16( VALUE self, VALUE filepath ) {
   fclose(fp);
 
   if ( c0 == 0 ) {
-    c0 = 0xFF;
+    c0 = modulo;
   }
   if ( c1 == 0 ) {
-    c1 = 0xFF;
+    c1 = modulo;
   }
 
   csum = (c1 << 8) | c0;
